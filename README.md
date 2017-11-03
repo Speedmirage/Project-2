@@ -5,7 +5,7 @@ CSCI 373 group number 6
 Project Information
 
 
-1) Write the Game Entry class that we worked on in chapter 3. 
+1) Write the Game Entry class that we worked on in chapter 3. === DONE ===
 
 2) Implement a class template singly linked list as we did in chapter 3
 
