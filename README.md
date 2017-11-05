@@ -7,9 +7,9 @@ Project Information
 
 1) Write the Game Entry class that we worked on in chapter 3. === DONE ===
 
-2) Implement a class template singly linked list as we did in chapter 3
+2) Implement a class template singly linked list as we did in chapter 3 ==DONE==
 
-3) Write a test program to show that you can create three different lists (gameList, intList and doubleList) using the list template to store GameEntry, integers and doubles respectively. 
+3) Write a test program to show that you can create three different lists (gameList, intList and doubleList) using the list template to store GameEntry, integers and doubles respectively. ==Partically Done==
 
 Step 2: Customize
 
