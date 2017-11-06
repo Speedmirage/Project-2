@@ -11,3 +11,4 @@ GameEntry::GameEntry(const string& n , int s): Name(n), Score(s){}//constructor
 
 string GameEntry::getName()const { return Name;}
 int GameEntry::getScore() const { return Score;}
+void GameEntryExept::setError(string Error){errMSG = Error;}
