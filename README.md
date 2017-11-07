@@ -17,19 +17,19 @@ Step 2: Customize
 
 2) Customize the addFront function so that it  throws an exception if the list is full.==DONE==
 
-3) Implement a function in the list template that allows the client to get the value of the minimum node (node with the lowest value in the list).
+3) Implement a function in the list template that allows the client to get the value of the minimum node (node with the lowest value in the list). //Robert//
 
-4) Implement a function that  allows the client to replace the minimum value node with a different value.  
+4) Implement a function that  allows the client to replace the minimum value node with a different value. //Addiel//
 
-5) Imlement a function to print all the elements in the list
+5) Imlement a function to print all the elements in the list //Addiel//
 
 Step 3: Test
 
-1) Write a test code that creates a list of maximum size 10 to store GameEntry objects. Therefore only top 10 scores are stored. However,  the scores are not stored in any ascending or descending order.
+1) Write a test code that creates a list of maximum size 10 to store GameEntry objects. Therefore only top 10 scores are stored. However,  the scores are not stored in any ascending or descending order. //Abdul//
 
-2) Use the addFront function to insert the scores in the head of the list. If the list is full, you will catch an exception.
+2) Use the addFront function to insert the scores in the head of the list. If the list is full, you will catch an exception. //
 
-3) In your catch block, find the minimum node in the list and if the minimum is less than the value you were inserting then replace the minimum with the new value  
+3) In your catch block, find the minimum node in the list and if the minimum is less than the value you were inserting then replace the minimum with the new value //
 
 Step 4: Get EXTRA CREDITS
 
