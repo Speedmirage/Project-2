@@ -27,9 +27,9 @@ Step 3: Test
 
 1) Write a test code that creates a list of maximum size 10 to store GameEntry objects. Therefore only top 10 scores are stored. However,  the scores are not stored in any ascending or descending order. //Abdul//
 
-2) Use the addFront function to insert the scores in the head of the list. If the list is full, you will catch an exception. //
+2) Use the addFront function to insert the scores in the head of the list. If the list is full, you will catch an exception. // Addiel //
 
-3) In your catch block, find the minimum node in the list and if the minimum is less than the value you were inserting then replace the minimum with the new value //
+3) In your catch block, find the minimum node in the list and if the minimum is less than the value you were inserting then replace the minimum with the new value //Raul//
 
 Step 4: Get EXTRA CREDITS
 
