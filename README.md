@@ -21,7 +21,7 @@ Step 2: Customize
 
 4) Implement a function that  allows the client to replace the minimum value node with a different value. //Addiel//
 
-5) Imlement a function to print all the elements in the list //Addiel//
+5) Imlement a function to print all the elements in the list //ANY ONE ABLE TO DO THIS??//
 
 Step 3: Test
 
