@@ -13,15 +13,15 @@ Project Information
 
 Step 2: Customize
 
-1) Implement the necessary code in the list template so that it allows an API user (also called client) to define the maximum size of the list  (even though technically and theoretically a list can be of unlimited size). ==NEEDs TO BE UPDATED==
+1) Implement the necessary code in the list template so that it allows an API user (also called client) to define the maximum size of the list  (even though technically and theoretically a list can be of unlimited size). ==DONE==
 
-2) Customize the addFront function so that it  throws an exception if the list is full.==NEEDS TO Be UPDATED==
+2) Customize the addFront function so that it  throws an exception if the list is full.==DONE==
 
 3) Implement a function in the list template that allows the client to get the value of the minimum node (node with the lowest value in the list). //Robert//
 
-4) Implement a function that  allows the client to replace the minimum value node with a different value. //Addiel//
+4) Implement a function that  allows the client to replace the minimum value node with a different value. //DONE NEEDS POLISH//
 
-5) Imlement a function to print all the elements in the list //ANY ONE ABLE TO DO THIS??//
+5) Imlement a function to print all the elements in the list //DONE//
 
 Step 3: Test
 
