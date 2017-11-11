@@ -1,53 +1,106 @@
-//
-//  main.cpp
-//  Assigment 2
-//
-//  Created by Addiel Almonte on 10/29/17.
-//  Copyright © 2017 Addiel Almonte. All rights reserved.
-//
 
 #include <iostream>
+#include <list>
+#include <iterator>
+#include <algorithm>
 #include "Slinked.hpp"
 #include "GameEntry.hpp"
-int main(int argc, const char * argv[]) {
+
+using namespace std;
+
+void display(list<int> g) {
+    
+    list <int> :: iterator it;
+    
+    for(it = g.begin(); it != g.end(); ++it)
+        
+        cout << " " << *it;
+    
+    cout << '\n';
+    
+}
+
+int main() {
     
     StringLinkedList s;
     string GameList;
     int intList;
     double doubleList;
-    int count;
-    string addGL;
+    int min = 100;
     
-    string Error = "Unable to enter this score.. List is full";
+    list <int> gqlist1, gqlist2;
     
-    cout<<"Please input the size of the GameEntry list"<<endl;
-    cin>>count;
+    int ch,value;
     
-    
-    for (int i = 1; i<(count+50); i++) { //Count+50 to be able to utilize the exception handling
+    while(true){
         
-        cout<<"Please input the score";
-        cin>>addGL;
-        s.addFront(addGL);
-        GameList = s.front();
-        //Exception handling below
-        try {
-            if ( i > count) //i-1 to make it run the exact number of times
-                throw GameEntryExept(Error);
-        } catch (GameEntryExept& me){
-            
-            cout<<"Unable to enter this score.. List is full"<<endl; //Exception is working
+        cout<< "Choose your option // 1. Add 2. Display 3. Minimum \n";
+        
+        std::cin >> ch;
+        
+        switch(ch) {
+                
+            case 1:
+                
+                cout<<"Please enter value to add:";
+                
+                cin>>value;
+                if (value<min)
+                    min = value;
+                //Exception handleing
+                try{
+                    
+                    if(gqlist1.size()==10) {
+                        
+                        throw value;//rasising exception if list is full
+                        
+                    } else {
+                        
+                        gqlist1.push_front(value);
+                        
+                    }
+                    
+                } catch(int x) {
+                    
+                    cout<<"Exception Has Been Caught...List is full \n";
+                    
+                    //getting minimum element from the list for replacement
+                    
+                list <int> :: iterator it=std::min_element(gqlist1.begin(),gqlist1.end()) ;
+                    
+                if(*it<value){
+                        
+                    *it=value;
+                    std::cout<<"Please be adviced. The last node may have been replaced by a bigger one "<<std::endl;
+                        
+                    }
+                }
+                break;
+                
+                
+            case 2:
+                
+                cout<<"Score board:";
+                
+                display(gqlist1);
+                break;
+            case 3:
+                std::string choice;
+                int rep;
+                std::cout<<"Would you like to print the minimum value and replace it? "<<std::endl;
+                std::cin>>choice;
+                
+                if (choice == "Yes" or choice=="yes"){
+                    std::cout<<min<<std::endl;
+                    std::cout<<"Input the value you would like to replace minimum with "<<std::endl;
+                    std::cin>>rep;
+                    std::replace(gqlist1.begin(),gqlist1.end(), min,rep);
+                }
         }
-        
-        
-        
         
     }
     
-    
-
-    
-    
-    
     return 0;
+    
 }
+
